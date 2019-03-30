@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,49 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIkit_study" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="78m-0f-gB9" userLabel="LEFT">
+                                <rect key="frame" x="20" y="290" width="50" height="327"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="iFL-m0-dGT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3L-Cd-I0g" userLabel="TOP">
+                                <rect key="frame" x="20" y="120" width="335" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="u7r-4s-TFU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GhR-T7-aht" userLabel="RIGHT">
+                                <rect key="frame" x="90" y="290" width="265" height="327"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d3L-Cd-I0g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="3Zo-4k-4UQ"/>
+                            <constraint firstItem="GhR-T7-aht" firstAttribute="bottom" secondItem="78m-0f-gB9" secondAttribute="bottom" id="3dj-BH-jbX"/>
+                            <constraint firstItem="GhR-T7-aht" firstAttribute="top" secondItem="78m-0f-gB9" secondAttribute="top" id="CCQ-Yd-fyQ"/>
+                            <constraint firstItem="d3L-Cd-I0g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KTC-VV-aQA"/>
+                            <constraint firstItem="GhR-T7-aht" firstAttribute="trailing" secondItem="d3L-Cd-I0g" secondAttribute="trailing" id="VWv-je-zh2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d3L-Cd-I0g" secondAttribute="trailing" constant="20" id="VZv-LS-WU6"/>
+                            <constraint firstItem="GhR-T7-aht" firstAttribute="leading" secondItem="78m-0f-gB9" secondAttribute="trailing" constant="20" id="bGD-yQ-TgW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="78m-0f-gB9" secondAttribute="bottom" constant="50" id="bHr-Z5-aun"/>
+                            <constraint firstItem="78m-0f-gB9" firstAttribute="leading" secondItem="d3L-Cd-I0g" secondAttribute="leading" id="fkz-M0-DGR"/>
+                            <constraint firstItem="78m-0f-gB9" firstAttribute="top" secondItem="d3L-Cd-I0g" secondAttribute="bottom" constant="20" id="oWC-uL-WLQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135" y="130.98591549295776"/>
         </scene>
     </scenes>
 </document>
